@@ -9,7 +9,6 @@ export default async function Home() {
   // Redirect to login if no session
   const { data: { session }} = await supabase.auth.getSession()
   if (!session) {
-    console.log('redirecting to login')
     redirect('/login')
   }
 
