@@ -1,5 +1,5 @@
 'use client';
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
+import { Session, createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import { useRouter } from 'next/navigation';
 
 export default function AuthButtonClient({ session }: {session: Session | null}) {
